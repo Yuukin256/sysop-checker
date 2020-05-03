@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <title>Jawp SysopChecker</title>
+    <link rel="stylesheet" href="index.css" />
+    <style media="screen and (max-width: 929px)">
+      .can-hide {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>ウィキペディア日本語版 管理者一覧</h1>
+    <div class="note center">
+      <ul>
+        <li>1日1回、管理者一覧を更新し、最新の編集と操作を再取得します。</li>
+      </ul>
+    </div>
+    <div id="lastUpdate" class="last-update center"></div>
+    <div class="switch">
+      <input id="tz-toggle-switch" class="cmn-toggle cmn-toggle-yes-no" type="checkbox" />
+      <label for="tz-toggle-switch" title="タイムゾーン切り替え" data-on="ローカルタイム" data-off="UTC"></label>
+    </div>
+    <div id="sysop-list">
+      <table id="sysopTable" class="sysop-list-table"></table>
+    </div>
+    <script src="bundle.js"></script>
+    <div class="note center">
+      <ul>
+        <li>「編集フィルター」は除いています。</li>
+      </ul>
+    </div>
+  </body>
+</html>
