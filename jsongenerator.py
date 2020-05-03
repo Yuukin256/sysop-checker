@@ -1,0 +1,37 @@
+from json import dumps
+from time import sleep
+
+import pywikibot
+from pywikibot import User
+
+
+site = pywikibot.Site()
+sysops = []
+json = {
+    'sysops': [],
+    'lastUpdate': ''
+}
+
+for s in site.allusers(group='sysop'):
+    sysops.append(User(site, s['name']))
+
+for s in sysops:
+    if s.username == '編集フィルター':
+        continue
+
+    last_edit = s.last_edit
+    last_event = s.last_event
+    data = {
+        'name': s.username,
+        'lastEditId': last_edit[1] if last_edit else '',
+        'lastEditTimestamp': last_edit[2].isoformat() if last_edit else '',
+        'lastEventId': last_event.logid() if last_event else '',
+        'lastEventTimestamp': last_event.timestamp().isoformat() if last_event else ''
+    }
+    json['sysops'].append(data)
+    sleep(1)
+
+json['lastUpdate'] = pywikibot.Timestamp.utcnow().isoformat()
+
+with open('sysops.json', 'w', encoding='utf_8') as f:
+    f.write(dumps(json, ensure_ascii=False, indent=2))
