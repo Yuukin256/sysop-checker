@@ -6,6 +6,7 @@ h1 {
   text-align: center;
 }
 .note {
+  width: 100%;
   margin-top: 15px;
   color: #303030;
   font-size: 14px;
@@ -17,12 +18,12 @@ h1 {
   list-style: none;
 }
 .center ul {
-  margin: 0;
+  width: 100%;
+  margin: 0 auto;
   padding: 0;
   text-align: center;
 }
 .last-update ul {
-  width: 100%;
   display: inline-block;
 }
 .tz-button {
