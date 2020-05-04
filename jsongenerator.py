@@ -33,5 +33,5 @@ for s in sysops:
 
 json['lastUpdate'] = pywikibot.Timestamp.utcnow().isoformat()
 
-with open('sysops.json', 'w', encoding='utf_8') as f:
+with open('jawp-sysop/src/data.json', 'w', encoding='utf_8') as f:
     f.write(dumps(json, ensure_ascii=False, indent=2))

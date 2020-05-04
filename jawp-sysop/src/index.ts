@@ -2,7 +2,7 @@ import _dayjs from 'dayjs';
 import utc from 'dayjs/plugin/utc';
 import $ from 'jquery';
 
-const json: SysopsJson = require('./sysops.json');
+const json: DataJson = require('./data.json');
 
 _dayjs.extend(utc);
 let usingUTC: boolean = true;
@@ -12,7 +12,7 @@ function dayjs(date?: string | number | Date | _dayjs.Dayjs) {
   return usingUTC ? _dayjs(date).utc() : _dayjs(date);
 }
 
-type InputSysopInfo = {
+interface DataJsonUserInfo {
   name: string;
   lastEditId: number;
   lastEditTimestamp: Date;
@@ -22,7 +22,7 @@ type InputSysopInfo = {
 
 type ActionType = 'log' | 'edit';
 
-type SysopInfo = {
+interface UserInfo {
   name: string;
   lastEditId: number;
   lastEditTimestamp: _dayjs.Dayjs;
@@ -38,15 +38,15 @@ type SysopInfo = {
   sysopOk: boolean; // true: No exceed  false: exceed
 };
 
-type SysopsJson = {
-  sysops: InputSysopInfo[];
+interface DataJson {
+  sysops: DataJsonUserInfo[];
   lastUpdate: Date;
 };
 
 const init = () => {
   // データ整理
   const makeSysopsData = () => {
-    const sysopsData: SysopInfo[] = [];
+    const userData: UserInfo[] = [];
 
     // 自動退任までの期間
     const threeMonthAgo = dayjs().subtract(3, 'month');
@@ -58,7 +58,7 @@ const init = () => {
       const lastActionId: number = lastActionType === 'edit' ? v.lastEditId : v.lastEventId;
       const lastActionTimestamp: Date = lastActionType === 'edit' ? v.lastEditTimestamp : v.lastEventTimestamp;
 
-      const data: SysopInfo = {
+      const data: UserInfo = {
         name: v.name,
         lastEditId: v.lastEditId,
         lastEditTimestamp: dayjs(v.lastEditTimestamp),
@@ -74,11 +74,11 @@ const init = () => {
         sysopOk: threeMonthAgo.isBefore(dayjs(lastActionTimestamp)),
       };
 
-      sysopsData.push(data);
+      userData.push(data);
     });
 
     // 自動退任が近い順に並び替え
-    sysopsData.sort((a, b) => {
+    userData.sort((a, b) => {
       if (a.lastActionTimestamp.isBefore(b.lastActionTimestamp)) {
         return -1;
       } else {
@@ -86,9 +86,9 @@ const init = () => {
       }
     });
 
-    return sysopsData;
+    return userData;
   };
-  const sysopsData = makeSysopsData();
+  const data = makeSysopsData();
 
   const datePattern: string = 'YYYY/MM/DD HH:mm:ss';
 
@@ -135,7 +135,7 @@ const init = () => {
     return mark;
   };
 
-  sysopsData.forEach((v, index) => {
+  data.forEach((v, index) => {
     const tr = document.createElement('tr');
 
     // 項番
