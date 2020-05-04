@@ -8,7 +8,9 @@ _dayjs.extend(utc);
 let usingUTC: boolean = true;
 
 // UTC/ローカル切り替え用のラッパー
-const dayjs = (date?: string | number | Date | _dayjs.Dayjs) => (usingUTC ? _dayjs(date).utc() : _dayjs(date));
+function dayjs(date?: string | number | Date | _dayjs.Dayjs) {
+  return usingUTC ? _dayjs(date).utc() : _dayjs(date);
+}
 
 type InputSysopInfo = {
   name: string;
@@ -88,7 +90,7 @@ const init = () => {
   };
   const sysopsData = makeSysopsData();
 
-  const datePattern: string = 'YYYY/MM/DD HH:MM:ss';
+  const datePattern: string = 'YYYY/MM/DD HH:mm:ss';
 
   // 最終更新/ページ描画
   $('#lastUpdate')
