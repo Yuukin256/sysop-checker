@@ -1,0 +1,104 @@
+body {
+  background-color: #c8fcf8;
+  font-size: auto;
+}
+h1 {
+  text-align: center;
+}
+.note {
+  margin: 15px auto 0;
+  padding: 0 10%;
+  color: #303030;
+  font-size: 14px;
+}
+.last-update {
+  margin: 10px 0;
+}
+.center li {
+  list-style: none;
+}
+.center ul {
+  width: 100%;
+  margin: auto auto;
+  padding: 0;
+  text-align: center;
+}
+.note > ul {
+  margin-bottom: 15px;
+}
+.list {
+  width: 95%;
+  margin: 0 auto;
+}
+.list > table {
+  max-width: 100%;
+  color: #0a4283;
+  margin: 0 auto 25px;
+  border-collapse: collapse;
+  background-color: white;
+}
+.list > table > caption {
+  font-size: 18px;
+  font-weight: bold;
+  color: #000000;
+  margin: 5px;
+}
+.list > table > caption > .small {
+  font-size: small;
+}
+.list > table tr:nth-child(even) {
+  background-color: #e6e3a1;
+}
+.list > table th,
+.list > table td {
+  padding: 5px 10px;
+}
+.list > table th {
+  white-space: nowrap;
+}
+.list > table .index {
+  text-align: right;
+  padding-right: 0.5em;
+}
+.list > table .username {
+  white-space: nowrap;
+}
+.list > table td > a {
+  float: right;
+}
+.list > table td > span.timestamp {
+  margin: auto 0.2em;
+}
+.list > table td > span.ok-mark {
+  font-weight: bold;
+  color: green;
+}
+.list > table td > span.ng-mark {
+  font-weight: bolder;
+  color: red;
+}
+
+.switch {
+  width: 90%;
+  margin: 10px auto 15px;
+  text-align: center;
+}
+.switch > .toggle-switch {
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+  margin: 0 20px;
+  padding: 2px;
+  width: 140px;
+  height: 35px;
+  color: #42d171;
+  background-color: white;
+  font-size: 18px;
+  line-height: 35px;
+  border-radius: 25px;
+}
+.switch > .toggle-switch.active {
+  color: white;
+  background-color: #42d171;
+}

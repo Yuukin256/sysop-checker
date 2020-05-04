@@ -1,8 +1,11 @@
 {
     "cSpell.words": [
+        "abusefilters",
         "jawp",
         "jsongenerator",
-        "logid"
+        "logid",
+        "pywikibot",
+        "rollbacker"
     ],
     "git.ignoreLimitWarning": true
 }

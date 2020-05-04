@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <title>Jawp RightChecker</title>
+    <link rel="stylesheet" href="index.css" />
+    <style media="screen and (max-width: 929px)">
+      .can-hide {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>ウィキペディア日本語版 権限持ち利用者一覧</h1>
+    <div class="note center">
+      <ul>
+        <li>
+          1日1回、管理者・巻き戻し者・削除者・インターフェース管理者一覧を更新し、最新の編集と操作を再取得します。
+        </li>
+        <li>
+          本ページの内容に正確性は保証しません。
+        </li>
+        <li>
+          本ページをご覧になり報告・通知・提案などをされる場合は、当該利用者の投稿記録やログ、方針・ガイドラインなどの文書や慣例を再度ご確認ください。
+        </li>
+        <li>本ページではJavaScriptを使用しています。JavaScriptが無効の場合は動作しません。</li>
+      </ul>
+    </div>
+    <div id="lastUpdate" class="last-update center"></div>
+    <div class="switch">
+      <div class="toggle-switch" id="utcToggle" title="UTCに切り替える">UTC</div>
+      <div class="toggle-switch" id="localToggle" title="お使いのコンピュータのタイムゾーンに切り替える">
+        ローカルタイム
+      </div>
+    </div>
+    <div class="list">
+      <table id="sysopTable"></table>
+      <table id="rollbackerTable"></table>
+      <table id="eliminatorTable"></table>
+      <table id="interfaceAdminTable"></table>
+    </div>
+    <script src="bundle.js"></script>
+    <div class="note center">
+      <ul>
+        <li>「編集フィルター」という管理者は除いています。</li>
+      </ul>
+      <ul>
+        <li>
+          <a href="https://github.com/Yuukin256/sysop-checker/tree/master">GitHub Repository</a>
+        </li>
+        <li>Created by Yuukin256 (<a href="https://ja.wikipedia.org/wiki/User:Yuukin0248">jawp: Yuukin0248</a>)</li>
+      </ul>
+    </div>
+  </body>
+</html>

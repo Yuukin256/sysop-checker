@@ -24,11 +24,11 @@ jobs:
           key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
           restore-keys: |
             ${{ runner.os }}-node-
-      - run: cd ./jawp-sysop/ && npm ci
-      - run: cd ./jawp-sysop/ && npm run build
+      - run: cd ./site/ && npm ci
+      - run: cd ./site/ && npm run build
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./jawp-sysop/dist
+          publish_dir: ./site/dist
