@@ -6,8 +6,8 @@ h1 {
   text-align: center;
 }
 .note {
-  width: 100%;
-  margin-top: 15px;
+  margin: 15px auto 0;
+  padding: 0 10%;
   color: #303030;
   font-size: 14px;
 }
@@ -19,112 +19,86 @@ h1 {
 }
 .center ul {
   width: 100%;
-  margin: 0 auto;
+  margin: auto auto;
   padding: 0;
   text-align: center;
 }
-.last-update ul {
-  display: inline-block;
+.note > ul {
+  margin-bottom: 15px;
 }
-.tz-button {
-  position: fixed;
-  right: 20px;
-  top: 20px;
+.list {
+  width: 95%;
+  margin: 0 auto;
 }
-.sysop-list {
+.list > table {
   max-width: 100%;
-}
-.sysop-list-table {
   color: #0a4283;
-  margin-left: auto;
-  margin-right: auto;
-}
-table {
+  margin: 0 auto 25px;
   border-collapse: collapse;
   background-color: white;
 }
-tr:nth-child(odd) {
+.list > table > caption {
+  font-size: 18px;
+  font-weight: bold;
+  color: #000000;
+  margin: 5px;
+}
+.list > table > caption > .small {
+  font-size: small;
+}
+.list > table tr:nth-child(even) {
   background-color: #e6e3a1;
 }
-th,
-td {
+.list > table th,
+.list > table td {
   padding: 5px 10px;
 }
-.sysop-list-table th {
+.list > table th {
   white-space: nowrap;
 }
-.sysop-list .index {
+.list > table .index {
   text-align: right;
   padding-right: 0.5em;
 }
-.username {
+.list > table .username {
   white-space: nowrap;
 }
-.sysop-list-table td > a {
+.list > table td > a {
   float: right;
 }
-.sysop-list-table td > span.timestamp {
+.list > table td > span.timestamp {
   margin: auto 0.2em;
 }
-.sysop-list-table td > span.ok-mark {
+.list > table td > span.ok-mark {
   font-weight: bold;
   color: green;
 }
-.sysop-list-table td > span.ng-mark {
+.list > table td > span.ng-mark {
   font-weight: bolder;
   color: red;
 }
 
 .switch {
-  width: 200px;
+  width: 90%;
   margin: 10px auto 15px;
-}
-.cmn-toggle {
-  display: none;
-}
-.cmn-toggle + label {
-  display: block;
-  position: relative;
-  cursor: pointer;
-  outline: none;
-  user-select: none;
-}
-input.cmn-toggle-yes-no + label {
-  margin: auto auto;
-  padding: 2px;
-  width: 180px;
-  height: 40px;
-}
-input.cmn-toggle-yes-no + label:before,
-input.cmn-toggle-yes-no + label:after {
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  color: #fff;
-  font-size: 20px;
   text-align: center;
-  line-height: 40px;
-  border-radius: 30px;
 }
-input.cmn-toggle-yes-no + label:before {
+.switch > .toggle-switch {
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+  margin: 0 20px;
+  padding: 2px;
+  width: 140px;
+  height: 35px;
+  color: #42d171;
+  background-color: white;
+  font-size: 18px;
+  line-height: 35px;
+  border-radius: 25px;
+}
+.switch > .toggle-switch.active {
+  color: white;
   background-color: #42d171;
-  content: attr(data-off);
-  transition: transform 0.3s;
-  backface-visibility: hidden;
-}
-input.cmn-toggle-yes-no + label:after {
-  background-color: #42d171;
-  content: attr(data-on);
-  transition: transform 0.3s;
-  transform: rotateY(180deg);
-  backface-visibility: hidden;
-}
-input.cmn-toggle-yes-no:checked + label:before {
-  transform: rotateY(180deg);
-}
-input.cmn-toggle-yes-no:checked + label:after {
-  transform: rotateY(0);
 }
