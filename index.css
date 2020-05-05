@@ -1,21 +1,24 @@
 body {
   background-color: #c8fcf8;
-  font-size: auto;
+  font-size: 1em;
 }
 h1 {
   text-align: center;
+}
+a {
+  text-decoration-line: none;
+}
+a:hover {
+  text-decoration-line: underline;
 }
 .note {
   margin: 15px auto 0;
   padding: 0 10%;
   color: #303030;
-  font-size: 14px;
+  font-size: smaller;
 }
 .last-update {
   margin: 10px 0;
-}
-.center li {
-  list-style: none;
 }
 .center ul {
   width: 100%;
@@ -23,22 +26,23 @@ h1 {
   padding: 0;
   text-align: center;
 }
+.center li {
+  list-style: none;
+}
 .note > ul {
   margin-bottom: 15px;
 }
 .list {
-  width: 95%;
   margin: 0 auto;
 }
 .list > table {
-  max-width: 100%;
   color: #0a4283;
   margin: 0 auto 25px;
   border-collapse: collapse;
   background-color: white;
 }
 .list > table > caption {
-  font-size: 18px;
+  font-size: large;
   font-weight: bold;
   color: #000000;
   margin: 5px;
@@ -52,6 +56,7 @@ h1 {
 .list > table th,
 .list > table td {
   padding: 5px 10px;
+  text-align: center;
 }
 .list > table th {
   white-space: nowrap;
@@ -60,22 +65,30 @@ h1 {
   text-align: right;
   padding-right: 0.5em;
 }
-.list > table .username {
+.list > table .user {
   white-space: nowrap;
+  text-align: left;
 }
-.list > table td > a {
-  float: right;
+.list > table td > span.wp-link {
+  margin-left: 0.2em;
+}
+.list > table td > span.small {
+  font-size: small;
 }
 .list > table td > span.timestamp {
   margin: auto 0.2em;
 }
 .list > table td > span.ok-mark {
-  font-weight: bold;
   color: green;
 }
 .list > table td > span.ng-mark {
-  font-weight: bolder;
   color: red;
+}
+.list > table td > span.ng-mark,
+.list > table td > span.ok-mark {
+  display: inline-block;
+  width: 1em;
+  font-weight: bold;
 }
 
 .switch {
