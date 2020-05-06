@@ -41,7 +41,7 @@ interface UserInfo {
 }
 
 // dayjs 文字列フォーマット UTC/ローカル 表示切り替え用
-const dayjsFormat = (date: dayjs.Dayjs = dayjs(), format: string = 'YYYY/MM/DD HH:mm:ss') =>
+const dayjsFormat = (date: dayjs.Dayjs = dayjs(), format = 'YYYY/MM/DD HH:mm:ss') =>
   (usingUTC ? date.utc() : date).format(format);
 
 // データ整理
@@ -74,115 +74,84 @@ const makeData = (users: DataJsonUserInfo[], rmPeriod: [number, dayjs.OpUnitType
   });
 
   // 自動退任が近い順に並び替え
-  userData.sort((a, b) => {
-    if (a.lastActionTimestamp.isBefore(b.lastActionTimestamp)) {
-      return -1;
-    } else {
-      return 1;
-    }
-  });
-
+  userData.sort((a, b) => (a.lastActionTimestamp.isBefore(b.lastActionTimestamp) ? -1 : 1));
   return userData;
 };
 
 // 表作成関数
-const makeTable = (
-  table: JQuery<HTMLElement>,
-  usersData: UserInfo[],
-  rmPeriodHeader: string = '自動退任日時'
-): JQuery<HTMLElement> => {
+const makeTable = (table: JQuery<HTMLElement>, usersData: UserInfo[], rmPeriodHeader: string): JQuery<HTMLElement> => {
   // チェックマーク
-  const okMark = () => $('<span>✓</span>').addClass('ok-mark');
+  const okMark = '<span class="ok-mark">✓</span>';
 
   // バツマーク
-  const ngMark = () => $('<span>✘</span>').addClass('ng-mark');
+  const ngMark = '<span class="ng-mark">✘</span>';
 
   // ウィキペディア日本語版 URLエンドポイント
   const wpEndpoint = 'https://ja.wikipedia.org/w/index.php';
 
   // 表ヘッダー
-  (() => {
-    const tr = $('<tr></tr>');
-    const headers = ['項番', '利用者', '最新編集 (差分)', '最新ログ (操作)', '最新編集/ログ', rmPeriodHeader];
-    headers.forEach((value) => {
-      const th = $(`<th>${value}</th>`);
-      if (value === '最新編集 (差分)' || value === '最新ログ (操作)') {
-        th.addClass('can-hide');
-      }
-      th.appendTo(tr);
-    });
-    tr.appendTo(table);
-  })();
+  const headersText = ['項番', '利用者', '最新編集 (差分)', '最新ログ (操作)', '最新編集/ログ', rmPeriodHeader];
+  const tableHeader = `<tr>${headersText.map((value, index) =>
+    index == 2 || index == 3 ? `<th>${value}</th>` : `<th class="can-hide">${value}</th>`
+  )}</tr>`;
 
   // 表データ
-  usersData.forEach((v, index) => {
-    $('<tr></tr>')
-      .append(
-        // 項番
-        $(`<td>${(index + 1).toString()}</td>`).addClass('index'),
+  const tableRows = usersData.map((v, index) => {
+    const tds: string[] = [];
+    tds.push(
+      // 項番
+      `<td class="index">${(index + 1).toString()}</td>`,
 
-        // 利用者
-        (() => {
-          const name = $(`<a>${v.name}</a>`).addClass('wp-link').prop('href', `${wpEndpoint}?title=User:${v.name}`);
-          const links = $('<span></span>')
-            .addClass(['wp-link', 'small'])
-            .append(
-              '(',
-              $('<a>投稿記録</a>').prop('href', `${wpEndpoint}?title=Special:Contributions/${v.name}`),
-              ' / ',
-              $('<a>ログ</a>').prop('href', `${wpEndpoint}?title=Special:Log&user=${v.name}`),
-              ')'
-            );
-          return $(`<td></td>`).addClass('user').append(name, links);
-        })(),
+      // 利用者
+      (() => {
+        const name = `<a class="wp-link" href="${wpEndpoint}?title=User:${v.name}">${v.name}</a>`;
+        const contributes = `<a href="${wpEndpoint}?title=Special:Contributions/${v.name}">投稿記録</a>`;
+        const logs = `<a href="${wpEndpoint}?title=Special:Log&user=${v.name}">ログ</a>`;
+        return `<td class="user">${name}<span class="wp-link small">(${contributes} / ${logs})</span></td>`;
+      })(),
 
-        // 最新編集 (差分)
-        (() => {
-          const mark = v.lastEditOk ? okMark() : ngMark();
-          const timestamp = $(`<span>${dayjsFormat(v.lastEditTimestamp)}</span>`).addClass('timestamp');
-          const link = $('<span></span>')
-            .addClass(['wp-link', 'small'])
-            .append('(', $('<a>差分</a>').prop('href', `${wpEndpoint}?diff=${v.lastEditId}`), ')');
-          return $('<td></td>').addClass('can-hide').append(mark, timestamp, link);
-        })(),
+      // 最新編集 (差分)
+      (() => {
+        const mark = v.lastEventOk ? okMark : ngMark;
+        const timestamp = `<span class="timestamp">${dayjsFormat(v.lastEditTimestamp)}</span>`;
+        const link = `<span class="wp-link small">(<a href="${wpEndpoint}?diff=${v.lastEditId}">差分</a>)</span>`;
+        return `<td class="can-hide">${mark}${timestamp}${link}</td>`;
+      })(),
 
-        // 最新ログ (操作)
-        (() => {
-          const mark = v.lastEventOk ? okMark() : ngMark();
-          const timestamp = $(`<span>${dayjsFormat(v.lastEventTimestamp)}</span>`).addClass('timestamp');
-          const link = $('<span></span>')
-            .addClass(['wp-link', 'small'])
-            .append('(', $('<a>操作</a>').prop('href', `${wpEndpoint}?title=Special:Log&logid=${v.lastEventId}`), ')');
-          return $('<td></td>').addClass('can-hide').append(mark, timestamp, link);
-        })(),
+      // 最新ログ (操作)
+      (() => {
+        const mark = v.lastEventOk ? okMark : ngMark;
+        const timestamp = `<span class="timestamp">${dayjsFormat(v.lastEventTimestamp)}</span>`;
+        const link = `<span class="wp-link small">(<a href="${wpEndpoint}?title=Special:Log&logid=${v.lastEventId}">差分</a>)</span>`;
+        return `<td class="can-hide">${mark}${timestamp}${link}</td>`;
+      })(),
 
-        // 最新編集/ログ
-        (() => {
-          const mark = v.lastActionOk ? okMark() : ngMark();
-          const timestamp = $(`<span>${dayjsFormat(v.lastActionTimestamp)}</span>`).addClass('timestamp');
-          const linkContent =
-            v.lastActionType === 'edit'
-              ? $('<a>編集</a>').prop('href', `${wpEndpoint}?diff=${v.lastEditId}`)
-              : $('<a>ログ</a>').prop('href', `${wpEndpoint}?title=Special:Log&logid=${v.lastEventId}`);
-          const link = $(`<span></span>`).addClass(['wp-link', 'small']).append('(', linkContent, ')');
-          return $('<td></td>').append(mark, timestamp, link);
-        })(),
+      // 最新編集/ログ
+      (() => {
+        const mark = v.lastActionOk ? okMark : ngMark;
+        const timestamp = `<span class="timestamp">${dayjsFormat(v.lastActionTimestamp)}</span>`;
+        const link =
+          v.lastActionType === 'edit'
+            ? `<a href="${wpEndpoint}?diff=${v.lastEditId}">編集</a>`
+            : `<a href="${wpEndpoint}?title=Special:Log&logid=${v.lastEventId}">ログ</a>`;
+        return `<td class="can-hide">${mark}${timestamp}<span class="wp-link small">(${link})</span></td>`;
+      })(),
 
-        // 権限除去/自動退任 日時
-        (() => {
-          const mark = v.lastActionOk ? okMark() : ngMark();
-          const timestamp = $(`<span>${dayjsFormat(v.estimatedRmRight)}</span>`).addClass('timestamp');
-          return $('<td></td>').append(mark, timestamp);
-        })()
-      )
-      .appendTo(table);
+      // 権限除去/自動退任 日時
+      (() => {
+        const mark = v.lastActionOk ? okMark : ngMark;
+        const timestamp = `<span class="timestamp">${dayjsFormat(v.estimatedRmRight)}</span>`;
+        return `<td class="can-hide">${mark}${timestamp}</td>`;
+      })()
+    );
+
+    return `<tr>${tds}</tr>`;
   });
 
-  return table;
+  return table.append(tableHeader, ...tableRows);
 };
 
 const init = () => {
-  // 表を作成
   let caption: string;
 
   // 管理者
@@ -233,10 +202,12 @@ $('#utcToggle').click(() => {
 
 // ローカルタイムゾーン に切り替え
 $('#localToggle').click(() => {
+  console.log(dayjs().toJSON());
   if (usingUTC) {
     usingUTC = false;
     init();
   }
+  console.log(dayjs().toJSON());
 });
 
 const sysopData = makeData(json.sysops, [3, 'month']);
