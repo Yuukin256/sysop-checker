@@ -91,9 +91,12 @@ const makeTable = (table: JQuery<HTMLElement>, usersData: UserInfo[], rmPeriodHe
 
   // 表ヘッダー
   const headersText = ['項番', '利用者', '最新編集 (差分)', '最新ログ (操作)', '最新編集/ログ', rmPeriodHeader];
-  const tableHeader = `<tr>${headersText.map((value, index) =>
-    index == 2 || index == 3 ? `<th>${value}</th>` : `<th class="can-hide">${value}</th>`
-  )}</tr>`;
+  const tableHeader =
+    '<tr>' +
+    headersText.map((value, index) =>
+      index == 2 || index == 3 ? `<th class="can-hide">${value}</th>` : `<th>${value}</th>`
+    ) +
+    '</tr>';
 
   // 表データ
   const tableRows = usersData.map((v, index) => {
@@ -134,14 +137,14 @@ const makeTable = (table: JQuery<HTMLElement>, usersData: UserInfo[], rmPeriodHe
           v.lastActionType === 'edit'
             ? `<a href="${wpEndpoint}?diff=${v.lastEditId}">編集</a>`
             : `<a href="${wpEndpoint}?title=Special:Log&logid=${v.lastEventId}">ログ</a>`;
-        return `<td class="can-hide">${mark}${timestamp}<span class="wp-link small">(${link})</span></td>`;
+        return `<td>${mark}${timestamp}<span class="wp-link small">(${link})</span></td>`;
       })(),
 
       // 権限除去/自動退任 日時
       (() => {
         const mark = v.lastActionOk ? okMark : ngMark;
         const timestamp = `<span class="timestamp">${dayjsFormat(v.estimatedRmRight)}</span>`;
-        return `<td class="can-hide">${mark}${timestamp}</td>`;
+        return `<td>${mark}${timestamp}</td>`;
       })()
     );
 
@@ -202,12 +205,10 @@ $('#utcToggle').click(() => {
 
 // ローカルタイムゾーン に切り替え
 $('#localToggle').click(() => {
-  console.log(dayjs().toJSON());
   if (usingUTC) {
     usingUTC = false;
     init();
   }
-  console.log(dayjs().toJSON());
 });
 
 const sysopData = makeData(json.sysops, [3, 'month']);
