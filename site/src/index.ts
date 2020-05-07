@@ -175,6 +175,11 @@ const init = () => {
   caption = '<caption>インターフェース管理者<br /><span class="small">6か月で権限除去提案</span></caption>';
   makeTable($('#interfaceAdminTable').html(caption), interfaceAdminData, '最新より6か月');
 
+  // 最終更新/ページ描画
+  $('#lastUpdate').html(
+    `<ul><li>データ最終更新: ${dayjsFormat(dayjs(json.lastUpdate))}</li><li>ページ描画: ${dayjsFormat()}</li></ul>`
+  );
+
   // タイムゾーン切り替えスイッチの調整
   if (usingUTC) {
     $('#utcToggle').addClass('active');
@@ -183,17 +188,8 @@ const init = () => {
     $('#localToggle').addClass('active');
     $('#utcToggle').removeClass('active');
   }
+  $('#now-timezone').html(`UTC ${dayjsFormat(undefined, 'Z')}`);
 };
-
-// 最終更新/ページ描画
-$('#lastUpdate')
-  .empty()
-  .append(
-    $('<ul></ul>').append(
-      $(`<li>データ最終更新: ${dayjsFormat(dayjs(json.lastUpdate))}</li>`),
-      $(`<li>ページ描画: ${dayjsFormat()}</li>`)
-    )
-  );
 
 // UTC に切り替え
 $('#utcToggle').click(() => {
