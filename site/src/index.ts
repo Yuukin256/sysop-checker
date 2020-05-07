@@ -8,6 +8,7 @@ let usingUTC: boolean = true;
 
 dayjs.extend(utc);
 
+type ActionType = 'log' | 'edit';
 interface DataJsonUserInfo {
   name: string;
   lastEditId: number;
@@ -23,8 +24,6 @@ interface DataJson {
   interfaceAdmins: DataJsonUserInfo[];
   lastUpdate: Date;
 }
-
-type ActionType = 'log' | 'edit';
 
 interface UserInfo {
   name: string;
@@ -155,32 +154,38 @@ const makeTable = (table: JQuery<HTMLElement>, usersData: UserInfo[], rmPeriodHe
 };
 
 const init = () => {
-  let caption: string;
+  let table: JQuery<HTMLElement>;
 
   // 管理者
-  caption =
-    '<caption>管理者 <span class="small">(BC CU OS 兼任含む)</span><br /><span class="small">3か月で自動退任</span></caption>';
-  makeTable($('#sysopTable').html(caption), sysopData, '最新より3か月');
+  table = $('#sysopTable').html(
+    '<caption>管理者<span class="small">(BC CU OS 兼任含む)</span><br><span class="small">3か月で自動退任</span></caption>'
+  );
+  makeTable(table, sysopData, '最新より3か月');
 
   // 巻き戻し者
-  caption =
-    '<caption>巻き戻し者<br /><span class="small">1年で会話ページ通知 その後1か月で権限除去提案</span></caption>';
-  makeTable($('#rollbackerTable').html(caption), rollbackerData, '最新より1年');
+  table = $('#rollbackerTable').html(
+    '<caption>巻き戻し者<br /><span class="small">1年で会話ページ通知 その後1か月で権限除去提案</span></caption>'
+  );
+  makeTable(table, rollbackerData, '最新より1年');
 
   // 削除者
-  caption = '<caption>削除者<br /><span class="small">1年で会話ページ通知 その後1か月で権限除去提案</span></caption>';
-  makeTable($('#eliminatorTable').html(caption), eliminatorData, '最新より1年');
+  table = $('#eliminatorTable').html(
+    '<caption>削除者<br /><span class="small">1年で会話ページ通知 その後1か月で権限除去提案</span></caption>'
+  );
+  makeTable(table, eliminatorData, '最新より1年');
 
   // インターフェース管理者
-  caption = '<caption>インターフェース管理者<br /><span class="small">6か月で権限除去提案</span></caption>';
-  makeTable($('#interfaceAdminTable').html(caption), interfaceAdminData, '最新より6か月');
+  table = $('#interfaceAdminTable').html(
+    '<caption>インターフェース管理者<br /><span class="small">6か月で権限除去提案</span></caption>'
+  );
+  makeTable(table, interfaceAdminData, '最新より6か月');
 
   // 最終更新/ページ描画
   $('#lastUpdate').html(
     `<ul><li>データ最終更新: ${dayjsFormat(dayjs(json.lastUpdate))}</li><li>ページ描画: ${dayjsFormat()}</li></ul>`
   );
 
-  // タイムゾーン切り替えスイッチの調整
+  // タイムゾーン切り替えスイッチのクラス切り替え
   if (usingUTC) {
     $('#utcToggle').addClass('active');
     $('#localToggle').removeClass('active');
@@ -188,6 +193,8 @@ const init = () => {
     $('#localToggle').addClass('active');
     $('#utcToggle').removeClass('active');
   }
+
+  // タイムゾーン表示を切り替え
   $('#now-timezone').html(`UTC ${dayjsFormat(undefined, 'Z')}`);
 };
 
