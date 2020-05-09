@@ -114,7 +114,7 @@ const makeTable = (table: JQuery<HTMLElement>, usersData: UserInfo[], rmPeriodHe
 
       // 最新編集 (差分)
       (() => {
-        const mark = v.lastEventOk ? okMark : ngMark;
+        const mark = v.lastEditOk ? okMark : ngMark;
         const timestamp = `<span class="timestamp">${dayjsFormat(v.lastEditTimestamp)}</span>`;
         const link = `<span class="wp-link small">(<a href="${wpEndpoint}?diff=${v.lastEditId}">差分</a>)</span>`;
         return `<td class="can-hide">${mark}${timestamp}${link}</td>`;
