@@ -124,7 +124,7 @@ const makeTable = (table: JQuery<HTMLElement>, usersData: UserInfo[], rmPeriodHe
       (() => {
         const mark = v.lastEventOk ? okMark : ngMark;
         const timestamp = `<span class="timestamp">${dayjsFormat(v.lastEventTimestamp)}</span>`;
-        const link = `<span class="wp-link small">(<a href="${wpEndpoint}?title=Special:Log&logid=${v.lastEventId}">差分</a>)</span>`;
+        const link = `<span class="wp-link small">(<a href="${wpEndpoint}?title=Special:Log&logid=${v.lastEventId}">操作</a>)</span>`;
         return `<td class="can-hide">${mark}${timestamp}${link}</td>`;
       })(),
 
