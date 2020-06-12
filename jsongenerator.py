@@ -40,5 +40,5 @@ for s, p in rolls:
 
 json['lastUpdate'] = pywikibot.Timestamp.utcnow().isoformat()
 
-with open('site/src/data.json', 'w', encoding='utf_8') as f:
+with open('site/data.json', 'w', encoding='utf_8') as f:
     f.write(dumps(json, ensure_ascii=False, indent=2))

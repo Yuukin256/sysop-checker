@@ -2,7 +2,7 @@ $(() => {
   $.getJSON('data.json', (json) => {
     let usingUTC = true;
 
-    dayjs.extend(utc);
+    dayjs.extend(window.dayjs_plugin_utc);
 
     // dayjs 文字列フォーマット UTC/ローカル 表示切り替え用
     const dayjsFormat = (date = dayjs(), format = 'YYYY/MM/DD HH:mm:ss') =>
