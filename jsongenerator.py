@@ -3,6 +3,7 @@ from time import sleep
 
 import pywikibot
 from pywikibot import User
+from pywikibot.exceptions import HiddenKeyError
 
 
 site = pywikibot.Site()
@@ -25,8 +26,12 @@ for s, p in rolls:
         if u.username == '編集フィルター':
             continue
 
-        last_edit = u.last_edit
-        last_event = u.last_event
+        try:
+            last_edit = u.last_edit
+            last_event = u.last_event
+        except HiddenKeyError:
+            pass
+
         data = {
             'name': u.username,
             'lastEditId': last_edit[1] if last_edit else '',
