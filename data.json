@@ -2,17 +2,17 @@
   "sysops": [
     {
       "name": "Araisyohei",
-      "lastEditId": 78606719,
-      "lastEditTimestamp": "2020-07-23T00:55:48Z",
-      "lastEventId": 4897188,
-      "lastEventTimestamp": "2020-07-19T22:38:00Z"
+      "lastEditId": 78766056,
+      "lastEditTimestamp": "2020-08-01T02:29:21Z",
+      "lastEventId": 4920174,
+      "lastEventTimestamp": "2020-08-01T14:56:09Z"
     },
     {
       "name": "Bellcricket",
-      "lastEditId": 78750460,
-      "lastEditTimestamp": "2020-07-31T06:27:28Z",
-      "lastEventId": 4909063,
-      "lastEventTimestamp": "2020-07-27T02:30:28Z"
+      "lastEditId": 78771482,
+      "lastEditTimestamp": "2020-08-01T08:55:02Z",
+      "lastEventId": 4919802,
+      "lastEventTimestamp": "2020-08-01T08:54:36Z"
     },
     {
       "name": "Bletilla",
@@ -37,15 +37,15 @@
     },
     {
       "name": "Infinite0694",
-      "lastEditId": 78761698,
-      "lastEditTimestamp": "2020-07-31T18:22:19Z",
-      "lastEventId": 4918754,
-      "lastEventTimestamp": "2020-07-31T18:25:17Z"
+      "lastEditId": 78761979,
+      "lastEditTimestamp": "2020-07-31T19:08:46Z",
+      "lastEventId": 4919005,
+      "lastEventTimestamp": "2020-07-31T19:08:46Z"
     },
     {
       "name": "Jkr2255",
-      "lastEditId": 78755404,
-      "lastEditTimestamp": "2020-07-31T11:04:19Z",
+      "lastEditId": 78774651,
+      "lastEditTimestamp": "2020-08-01T13:10:47Z",
       "lastEventId": 4865689,
       "lastEventTimestamp": "2020-06-29T22:45:06Z"
     },
@@ -58,10 +58,10 @@
     },
     {
       "name": "Kinori",
-      "lastEditId": 78741611,
-      "lastEditTimestamp": "2020-07-30T14:17:03Z",
-      "lastEventId": 4916370,
-      "lastEventTimestamp": "2020-07-30T14:14:57Z"
+      "lastEditId": 78763082,
+      "lastEditTimestamp": "2020-07-31T21:55:11Z",
+      "lastEventId": 4919089,
+      "lastEventTimestamp": "2020-07-31T21:55:06Z"
     },
     {
       "name": "Kubou",
@@ -100,24 +100,24 @@
     },
     {
       "name": "Muyo",
-      "lastEditId": 78761498,
-      "lastEditTimestamp": "2020-07-31T17:51:06Z",
-      "lastEventId": 4917379,
-      "lastEventTimestamp": "2020-07-31T09:55:01Z"
+      "lastEditId": 78774976,
+      "lastEditTimestamp": "2020-08-01T13:36:14Z",
+      "lastEventId": 4920035,
+      "lastEventTimestamp": "2020-08-01T12:55:14Z"
     },
     {
       "name": "Nnh",
-      "lastEditId": 78758517,
-      "lastEditTimestamp": "2020-07-31T14:08:29Z",
-      "lastEventId": 4917741,
-      "lastEventTimestamp": "2020-07-31T14:00:58Z"
+      "lastEditId": 78777559,
+      "lastEditTimestamp": "2020-08-01T16:36:59Z",
+      "lastEventId": 4920267,
+      "lastEventTimestamp": "2020-08-01T15:41:52Z"
     },
     {
       "name": "Ohgi",
-      "lastEditId": 78755276,
-      "lastEditTimestamp": "2020-07-31T10:56:36Z",
-      "lastEventId": 4917448,
-      "lastEventTimestamp": "2020-07-31T10:59:56Z"
+      "lastEditId": 78774655,
+      "lastEditTimestamp": "2020-08-01T13:10:55Z",
+      "lastEventId": 4920059,
+      "lastEventTimestamp": "2020-08-01T13:10:55Z"
     },
     {
       "name": "Panpulha",
@@ -142,31 +142,31 @@
     },
     {
       "name": "Sakoppi",
-      "lastEditId": 78759884,
-      "lastEditTimestamp": "2020-07-31T15:20:07Z",
+      "lastEditId": 78778012,
+      "lastEditTimestamp": "2020-08-01T17:15:19Z",
       "lastEventId": 4910054,
       "lastEventTimestamp": "2020-07-27T14:38:27Z"
     },
     {
       "name": "Sumaru",
-      "lastEditId": 78760134,
-      "lastEditTimestamp": "2020-07-31T15:35:08Z",
-      "lastEventId": 4918319,
-      "lastEventTimestamp": "2020-07-31T15:34:47Z"
+      "lastEditId": 78774310,
+      "lastEditTimestamp": "2020-08-01T12:44:00Z",
+      "lastEventId": 4920266,
+      "lastEventTimestamp": "2020-08-01T15:41:40Z"
     },
     {
       "name": "Taisyo",
-      "lastEditId": 78758769,
-      "lastEditTimestamp": "2020-07-31T14:19:41Z",
-      "lastEventId": 4916890,
-      "lastEventTimestamp": "2020-07-31T02:44:33Z"
+      "lastEditId": 78771695,
+      "lastEditTimestamp": "2020-08-01T09:12:48Z",
+      "lastEventId": 4919826,
+      "lastEventTimestamp": "2020-08-01T09:13:10Z"
     },
     {
       "name": "VZP10224",
-      "lastEditId": 78716715,
-      "lastEditTimestamp": "2020-07-28T23:31:33Z",
-      "lastEventId": 4916890,
-      "lastEventTimestamp": "2020-07-31T02:44:33Z"
+      "lastEditId": 78775536,
+      "lastEditTimestamp": "2020-08-01T14:13:12Z",
+      "lastEventId": 4919826,
+      "lastEventTimestamp": "2020-08-01T09:13:10Z"
     },
     {
       "name": "W.CC",
@@ -184,17 +184,17 @@
     },
     {
       "name": "Yapparina",
-      "lastEditId": 78760255,
-      "lastEditTimestamp": "2020-07-31T15:44:12Z",
-      "lastEventId": 4918194,
-      "lastEventTimestamp": "2020-07-31T15:20:15Z"
+      "lastEditId": 78777078,
+      "lastEditTimestamp": "2020-08-01T15:55:13Z",
+      "lastEventId": 4920127,
+      "lastEventTimestamp": "2020-08-01T14:16:54Z"
     },
     {
       "name": "えのきだたもつ",
-      "lastEditId": 78761635,
-      "lastEditTimestamp": "2020-07-31T18:09:32Z",
-      "lastEventId": 4918599,
-      "lastEventTimestamp": "2020-07-31T15:55:55Z"
+      "lastEditId": 78777385,
+      "lastEditTimestamp": "2020-08-01T16:16:49Z",
+      "lastEventId": 4920304,
+      "lastEventTimestamp": "2020-08-01T16:14:01Z"
     },
     {
       "name": "おはぐろ蜻蛉",
@@ -205,43 +205,43 @@
     },
     {
       "name": "さかおり",
-      "lastEditId": 78758949,
-      "lastEditTimestamp": "2020-07-31T14:28:48Z",
-      "lastEventId": 4916809,
-      "lastEventTimestamp": "2020-07-31T01:25:19Z"
+      "lastEditId": 78769306,
+      "lastEditTimestamp": "2020-08-01T06:22:06Z",
+      "lastEventId": 4919612,
+      "lastEventTimestamp": "2020-08-01T06:22:31Z"
     },
     {
       "name": "アルトクール",
-      "lastEditId": 78760265,
-      "lastEditTimestamp": "2020-07-31T15:44:42Z",
-      "lastEventId": 4917476,
-      "lastEventTimestamp": "2020-07-31T11:21:20Z"
+      "lastEditId": 78774289,
+      "lastEditTimestamp": "2020-08-01T12:42:14Z",
+      "lastEventId": 4920019,
+      "lastEventTimestamp": "2020-08-01T12:43:00Z"
     },
     {
       "name": "ネイ",
-      "lastEditId": 78759964,
-      "lastEditTimestamp": "2020-07-31T15:23:02Z",
-      "lastEventId": 4917475,
-      "lastEventTimestamp": "2020-07-31T11:20:40Z"
+      "lastEditId": 78777933,
+      "lastEditTimestamp": "2020-08-01T17:08:33Z",
+      "lastEventId": 4920347,
+      "lastEventTimestamp": "2020-08-01T17:08:02Z"
     },
     {
       "name": "㭍月例祭",
-      "lastEditId": 78719194,
-      "lastEditTimestamp": "2020-07-29T03:49:56Z",
-      "lastEventId": 4905813,
-      "lastEventTimestamp": "2020-07-25T10:04:46Z"
+      "lastEditId": 78773634,
+      "lastEditTimestamp": "2020-08-01T11:48:22Z",
+      "lastEventId": 4920181,
+      "lastEventTimestamp": "2020-08-01T15:00:37Z"
     },
     {
       "name": "伊佐坂安物",
       "lastEditId": 78662771,
       "lastEditTimestamp": "2020-07-26T01:20:19Z",
-      "lastEventId": 4914681,
-      "lastEventTimestamp": "2020-07-29T10:25:30Z"
+      "lastEventId": 4919936,
+      "lastEventTimestamp": "2020-08-01T10:49:53Z"
     },
     {
       "name": "健ちゃん",
-      "lastEditId": 78756645,
-      "lastEditTimestamp": "2020-07-31T12:25:38Z",
+      "lastEditId": 78773991,
+      "lastEditTimestamp": "2020-08-01T12:16:53Z",
       "lastEventId": 4916277,
       "lastEventTimestamp": "2020-07-30T13:06:59Z"
     },
@@ -268,15 +268,15 @@
     },
     {
       "name": "霧木諒二",
-      "lastEditId": 78691913,
-      "lastEditTimestamp": "2020-07-27T11:47:45Z",
-      "lastEventId": 4909719,
-      "lastEventTimestamp": "2020-07-27T11:47:45Z"
+      "lastEditId": 78768438,
+      "lastEditTimestamp": "2020-08-01T05:28:08Z",
+      "lastEventId": 4919505,
+      "lastEventTimestamp": "2020-08-01T05:28:08Z"
     },
     {
       "name": "青子守歌",
-      "lastEditId": 78742200,
-      "lastEditTimestamp": "2020-07-30T15:12:36Z",
+      "lastEditId": 78763249,
+      "lastEditTimestamp": "2020-07-31T22:20:53Z",
       "lastEventId": 4915042,
       "lastEventTimestamp": "2020-07-29T15:03:48Z"
     }
@@ -307,17 +307,17 @@
   "eliminators": [
     {
       "name": "Jishinni",
-      "lastEditId": 78725929,
-      "lastEditTimestamp": "2020-07-29T12:46:33Z",
-      "lastEventId": 4914869,
-      "lastEventTimestamp": "2020-07-29T12:46:09Z"
+      "lastEditId": 78770941,
+      "lastEditTimestamp": "2020-08-01T08:18:10Z",
+      "lastEventId": 4919759,
+      "lastEventTimestamp": "2020-08-01T08:20:38Z"
     },
     {
       "name": "Karasunoko",
-      "lastEditId": 78760906,
-      "lastEditTimestamp": "2020-07-31T16:43:41Z",
-      "lastEventId": 4918185,
-      "lastEventTimestamp": "2020-07-31T15:14:55Z"
+      "lastEditId": 78778382,
+      "lastEditTimestamp": "2020-08-01T18:04:12Z",
+      "lastEventId": 4920122,
+      "lastEventTimestamp": "2020-08-01T14:14:08Z"
     },
     {
       "name": "SilverSpeech",
@@ -344,24 +344,24 @@
     },
     {
       "name": "Infinite0694",
-      "lastEditId": 78761698,
-      "lastEditTimestamp": "2020-07-31T18:22:19Z",
-      "lastEventId": 4918754,
-      "lastEventTimestamp": "2020-07-31T18:25:17Z"
+      "lastEditId": 78761979,
+      "lastEditTimestamp": "2020-07-31T19:08:46Z",
+      "lastEventId": 4919005,
+      "lastEventTimestamp": "2020-07-31T19:08:46Z"
     },
     {
       "name": "Jkr2255",
-      "lastEditId": 78755404,
-      "lastEditTimestamp": "2020-07-31T11:04:19Z",
+      "lastEditId": 78774651,
+      "lastEditTimestamp": "2020-08-01T13:10:47Z",
       "lastEventId": 4865689,
       "lastEventTimestamp": "2020-06-29T22:45:06Z"
     },
     {
       "name": "Marine-Blue",
-      "lastEditId": 78760512,
-      "lastEditTimestamp": "2020-07-31T16:10:22Z",
-      "lastEventId": 4900904,
-      "lastEventTimestamp": "2020-07-22T13:36:35Z"
+      "lastEditId": 78778159,
+      "lastEditTimestamp": "2020-08-01T17:37:56Z",
+      "lastEventId": 4920363,
+      "lastEventTimestamp": "2020-08-01T17:37:56Z"
     },
     {
       "name": "Penn Station",
@@ -372,8 +372,8 @@
     },
     {
       "name": "Sakoppi",
-      "lastEditId": 78759884,
-      "lastEditTimestamp": "2020-07-31T15:20:07Z",
+      "lastEditId": 78778012,
+      "lastEditTimestamp": "2020-08-01T17:15:19Z",
       "lastEventId": 4910054,
       "lastEventTimestamp": "2020-07-27T14:38:27Z"
     },
@@ -400,18 +400,18 @@
     },
     {
       "name": "ネイ",
-      "lastEditId": 78759964,
-      "lastEditTimestamp": "2020-07-31T15:23:02Z",
-      "lastEventId": 4917475,
-      "lastEventTimestamp": "2020-07-31T11:20:40Z"
+      "lastEditId": 78777933,
+      "lastEditTimestamp": "2020-08-01T17:08:33Z",
+      "lastEventId": 4920347,
+      "lastEventTimestamp": "2020-08-01T17:08:02Z"
     },
     {
       "name": "青子守歌",
-      "lastEditId": 78742200,
-      "lastEditTimestamp": "2020-07-30T15:12:36Z",
+      "lastEditId": 78763249,
+      "lastEditTimestamp": "2020-07-31T22:20:53Z",
       "lastEventId": 4915042,
       "lastEventTimestamp": "2020-07-29T15:03:48Z"
     }
   ],
-  "lastUpdate": "2020-07-31T19:01:53Z"
+  "lastUpdate": "2020-08-01T19:01:53Z"
 }
