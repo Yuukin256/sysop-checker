@@ -10,31 +10,27 @@ $(() => {
 
     // データ整理
     const makeData = (users, rmPeriod) => {
-      const userData = [];
-
       // 自動退任までの期間
       const rmDeadline = dayjs().subtract(...rmPeriod);
 
       // 利用者の情報整理
-      users.forEach((v) => {
-        const lastActionType = dayjs(v.lastEditTimestamp).isAfter(dayjs(v.lastEventTimestamp)) ? 'edit' : 'log';
-        const lastActionTimestamp = lastActionType === 'edit' ? v.lastEditTimestamp : v.lastEventTimestamp;
+      const userData = users.map((d) => {
+        const lastActionType = dayjs(d.lastEditTimestamp).isAfter(dayjs(d.lastEventTimestamp)) ? 'edit' : 'log';
+        const lastActionTimestamp = lastActionType === 'edit' ? d.lastEditTimestamp : d.lastEventTimestamp;
 
-        const data = {
-          name: v.name,
-          lastEditId: v.lastEditId,
-          lastEditTimestamp: dayjs(v.lastEditTimestamp),
-          lastEditOk: rmDeadline.isBefore(dayjs(v.lastEditTimestamp)),
-          lastEventId: v.lastEventId,
-          lastEventTimestamp: dayjs(v.lastEventTimestamp),
-          lastEventOk: rmDeadline.isBefore(dayjs(v.lastEventTimestamp)),
+        return {
+          name: d.name,
+          lastEditId: d.lastEditId,
+          lastEditTimestamp: dayjs(d.lastEditTimestamp),
+          lastEditOk: rmDeadline.isBefore(dayjs(d.lastEditTimestamp)),
+          lastEventId: d.lastEventId,
+          lastEventTimestamp: dayjs(d.lastEventTimestamp),
+          lastEventOk: rmDeadline.isBefore(dayjs(d.lastEventTimestamp)),
           lastActionType,
           lastActionTimestamp: dayjs(lastActionTimestamp),
           lastActionOk: rmDeadline.isBefore(dayjs(lastActionTimestamp)),
           estimatedRmRight: dayjs(lastActionTimestamp).add(...rmPeriod),
         };
-
-        userData.push(data);
       });
 
       // 自動退任が近い順に並び替え
