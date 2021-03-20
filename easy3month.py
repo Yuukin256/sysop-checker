@@ -5,7 +5,7 @@ from dateutil.relativedelta import relativedelta
 from pywikibot import User
 
 
-site = pywikibot.Site()
+site = pywikibot.Site('ja')
 sysops = []
 no_edit_sysops = []
 no_event_sysops = []

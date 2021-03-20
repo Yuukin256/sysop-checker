@@ -6,7 +6,7 @@ from pywikibot import User
 from pywikibot.exceptions import HiddenKeyError
 
 
-site = pywikibot.Site()
+site = pywikibot.Site('ja')
 json = {
     'sysops': [],
     'rollbackers': [],
