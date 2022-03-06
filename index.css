@@ -1,0 +1,154 @@
+body {
+  background-color: #c8fcf8;
+  -webkit-text-size-adjust: 100%;
+}
+
+h1 {
+  text-align: center;
+}
+
+a {
+  text-decoration-line: none;
+}
+
+a:hover {
+  text-decoration-line: underline;
+}
+
+.note {
+  margin: 15px auto 0;
+  padding: 0 10%;
+  color: #303030;
+  font-size: small;
+}
+
+.last-update,
+.timezone > #now-timezone {
+  margin: 10px 0;
+}
+
+.timezone {
+  width: 90%;
+  margin: 10px auto;
+  text-align: center;
+}
+
+.timezone > button.toggle-switch {
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+  margin: 5px 20px 2px;
+  padding: 2px;
+  width: 140px;
+  height: 35px;
+  color: #42d171;
+  background-color: white;
+  font-size: 18px;
+  line-height: 35px;
+  border-radius: 25px;
+  border-style: none;
+  box-shadow: 2px 2px 2px 0 #666;
+  -moz-box-shadow: 2px 2px 2px 0 #666;
+  -webkit-box-shadow: 2px 2px 2px 0 #666;
+  outline: 0;
+}
+
+.timezone > button.toggle-switch:active {
+  transform: translate3d(0, 2px, 0);
+  box-shadow: none;
+}
+
+.timezone > button.toggle-switch.active {
+  color: white;
+  font-weight: bold;
+  background-color: #42d171;
+}
+
+.center ul {
+  width: 100%;
+  margin: auto auto;
+  padding: 0;
+  text-align: center;
+}
+
+.center li {
+  list-style: none;
+}
+
+.note > ul {
+  margin-bottom: 15px;
+}
+
+.list {
+  margin: 0 auto;
+}
+
+.list > table {
+  color: #0a4283;
+  margin: 0 auto 25px;
+  border-collapse: collapse;
+  background-color: white;
+}
+
+.list > table > caption {
+  font-size: large;
+  font-weight: bold;
+  color: #000000;
+  margin: 5px;
+}
+
+.list > table > caption > .small {
+  font-size: small;
+}
+
+.list > table tr:nth-child(even) {
+  background-color: #e6e3a1;
+}
+
+.list > table th,
+.list > table td {
+  padding: 5px 10px;
+  text-align: center;
+}
+
+.list > table th {
+  white-space: nowrap;
+}
+
+.list > table .index {
+  text-align: right;
+  padding-right: 0.5em;
+}
+
+.list > table .user {
+  white-space: nowrap;
+  text-align: left;
+}
+
+.list > table td > span.wp-link {
+  margin-left: 0.2em;
+}
+
+.list > table td > span.small {
+  font-size: small;
+}
+
+.list > table td > span.timestamp {
+  margin: auto 0.2em;
+}
+
+.list > table td > span.ok-mark {
+  color: green;
+}
+
+.list > table td > span.ng-mark {
+  color: red;
+}
+
+.list > table td > span.ng-mark,
+.list > table td > span.ok-mark {
+  display: inline-block;
+  width: 1em;
+  font-weight: bold;
+}
