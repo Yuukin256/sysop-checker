@@ -2,17 +2,17 @@
   "sysops": [
     {
       "name": "Araisyohei",
-      "lastEditId": 91948163,
-      "lastEditTimestamp": "2022-10-14T01:03:33Z",
+      "lastEditId": 92085479,
+      "lastEditTimestamp": "2022-10-23T03:31:41Z",
       "lastEventId": 6173082,
       "lastEventTimestamp": "2022-10-14T01:03:33Z"
     },
     {
       "name": "Dragoniez",
-      "lastEditId": 92068944,
-      "lastEditTimestamp": "2022-10-22T04:52:45Z",
-      "lastEventId": 6186034,
-      "lastEventTimestamp": "2022-10-22T13:50:45Z"
+      "lastEditId": 92097136,
+      "lastEditTimestamp": "2022-10-23T18:39:22Z",
+      "lastEventId": 6188032,
+      "lastEventTimestamp": "2022-10-23T15:57:10Z"
     },
     {
       "name": "Faso",
@@ -23,10 +23,10 @@
     },
     {
       "name": "Halowand",
-      "lastEditId": 92079749,
-      "lastEditTimestamp": "2022-10-22T16:59:16Z",
-      "lastEventId": 6186240,
-      "lastEventTimestamp": "2022-10-22T16:59:16Z"
+      "lastEditId": 92096248,
+      "lastEditTimestamp": "2022-10-23T16:15:21Z",
+      "lastEventId": 6188061,
+      "lastEventTimestamp": "2022-10-23T16:14:44Z"
     },
     {
       "name": "Infinite0694",
@@ -72,10 +72,10 @@
     },
     {
       "name": "Marine-Blue",
-      "lastEditId": 92031296,
-      "lastEditTimestamp": "2022-10-19T13:33:13Z",
-      "lastEventId": 6182267,
-      "lastEventTimestamp": "2022-10-20T02:46:20Z"
+      "lastEditId": 92096364,
+      "lastEditTimestamp": "2022-10-23T16:33:36Z",
+      "lastEventId": 6188065,
+      "lastEventTimestamp": "2022-10-23T16:33:59Z"
     },
     {
       "name": "MaximusM4",
@@ -100,17 +100,17 @@
     },
     {
       "name": "Muyo",
-      "lastEditId": 92078560,
-      "lastEditTimestamp": "2022-10-22T15:24:42Z",
-      "lastEventId": 6186077,
-      "lastEventTimestamp": "2022-10-22T14:22:47Z"
+      "lastEditId": 92093033,
+      "lastEditTimestamp": "2022-10-23T11:59:48Z",
+      "lastEventId": 6187755,
+      "lastEventTimestamp": "2022-10-23T12:00:12Z"
     },
     {
       "name": "Nnh",
-      "lastEditId": 92080266,
-      "lastEditTimestamp": "2022-10-22T18:24:39Z",
-      "lastEventId": 6186285,
-      "lastEventTimestamp": "2022-10-22T18:09:41Z"
+      "lastEditId": 92096556,
+      "lastEditTimestamp": "2022-10-23T16:57:40Z",
+      "lastEventId": 6187104,
+      "lastEventTimestamp": "2022-10-23T06:53:03Z"
     },
     {
       "name": "Ohgi",
@@ -142,31 +142,31 @@
     },
     {
       "name": "Sumaru",
-      "lastEditId": 92079490,
-      "lastEditTimestamp": "2022-10-22T16:28:03Z",
-      "lastEventId": 6186219,
-      "lastEventTimestamp": "2022-10-22T16:21:57Z"
+      "lastEditId": 92093689,
+      "lastEditTimestamp": "2022-10-23T12:47:00Z",
+      "lastEventId": 6187809,
+      "lastEventTimestamp": "2022-10-23T12:49:21Z"
     },
     {
       "name": "Taisyo",
-      "lastEditId": 91964683,
-      "lastEditTimestamp": "2022-10-15T03:06:09Z",
-      "lastEventId": 6185748,
-      "lastEventTimestamp": "2022-10-22T09:21:50Z"
+      "lastEditId": 92090933,
+      "lastEditTimestamp": "2022-10-23T09:41:19Z",
+      "lastEventId": 6187014,
+      "lastEventTimestamp": "2022-10-23T05:15:25Z"
     },
     {
       "name": "VZP10224",
-      "lastEditId": 92072777,
-      "lastEditTimestamp": "2022-10-22T09:43:32Z",
+      "lastEditId": 92090350,
+      "lastEditTimestamp": "2022-10-23T08:56:12Z",
       "lastEventId": 6182123,
       "lastEventTimestamp": "2022-10-19T23:34:43Z"
     },
     {
       "name": "W.CC",
-      "lastEditId": 92059442,
-      "lastEditTimestamp": "2022-10-21T12:19:59Z",
-      "lastEventId": 6184281,
-      "lastEventTimestamp": "2022-10-21T12:20:10Z"
+      "lastEditId": 92085698,
+      "lastEditTimestamp": "2022-10-23T03:42:48Z",
+      "lastEventId": 6186926,
+      "lastEventTimestamp": "2022-10-23T03:43:20Z"
     },
     {
       "name": "Y-dash",
@@ -177,17 +177,17 @@
     },
     {
       "name": "Yapparina",
-      "lastEditId": 92074155,
-      "lastEditTimestamp": "2022-10-22T11:29:05Z",
+      "lastEditId": 92094662,
+      "lastEditTimestamp": "2022-10-23T13:53:03Z",
       "lastEventId": 6182071,
       "lastEventTimestamp": "2022-10-19T21:24:36Z"
     },
     {
       "name": "えのきだたもつ",
-      "lastEditId": 92080275,
-      "lastEditTimestamp": "2022-10-22T18:26:33Z",
-      "lastEventId": 6186079,
-      "lastEventTimestamp": "2022-10-22T14:24:08Z"
+      "lastEditId": 92097179,
+      "lastEditTimestamp": "2022-10-23T18:50:49Z",
+      "lastEventId": 6188109,
+      "lastEventTimestamp": "2022-10-23T18:00:10Z"
     },
     {
       "name": "おはぐろ蜻蛉",
@@ -198,10 +198,10 @@
     },
     {
       "name": "さかおり",
-      "lastEditId": 92066583,
-      "lastEditTimestamp": "2022-10-22T01:29:10Z",
-      "lastEventId": 6185336,
-      "lastEventTimestamp": "2022-10-22T05:09:43Z"
+      "lastEditId": 92084862,
+      "lastEditTimestamp": "2022-10-23T02:50:07Z",
+      "lastEventId": 6186705,
+      "lastEventTimestamp": "2022-10-23T00:25:13Z"
     },
     {
       "name": "アルトクール",
@@ -219,8 +219,8 @@
     },
     {
       "name": "㭍月例祭",
-      "lastEditId": 92050668,
-      "lastEditTimestamp": "2022-10-20T22:53:52Z",
+      "lastEditId": 92096636,
+      "lastEditTimestamp": "2022-10-23T17:07:11Z",
       "lastEventId": 6181394,
       "lastEventTimestamp": "2022-10-19T09:20:35Z"
     },
@@ -233,10 +233,10 @@
     },
     {
       "name": "健ちゃん",
-      "lastEditId": 92079764,
-      "lastEditTimestamp": "2022-10-22T17:01:18Z",
-      "lastEventId": 6185345,
-      "lastEventTimestamp": "2022-10-22T05:25:54Z"
+      "lastEditId": 92089919,
+      "lastEditTimestamp": "2022-10-23T08:27:57Z",
+      "lastEventId": 6187438,
+      "lastEventTimestamp": "2022-10-23T08:27:57Z"
     },
     {
       "name": "多摩に暇人",
@@ -254,17 +254,17 @@
     },
     {
       "name": "柏尾菓子",
-      "lastEditId": 92077013,
-      "lastEditTimestamp": "2022-10-22T14:00:11Z",
-      "lastEventId": 6186021,
-      "lastEventTimestamp": "2022-10-22T13:34:57Z"
+      "lastEditId": 92093361,
+      "lastEditTimestamp": "2022-10-23T12:23:22Z",
+      "lastEventId": 6187785,
+      "lastEventTimestamp": "2022-10-23T12:27:58Z"
     },
     {
       "name": "玄海093",
-      "lastEditId": 92069488,
-      "lastEditTimestamp": "2022-10-22T05:39:28Z",
-      "lastEventId": 6185279,
-      "lastEventTimestamp": "2022-10-22T04:28:29Z"
+      "lastEditId": 92094757,
+      "lastEditTimestamp": "2022-10-23T14:00:35Z",
+      "lastEventId": 6187905,
+      "lastEventTimestamp": "2022-10-23T13:52:56Z"
     },
     {
       "name": "霧木諒二",
@@ -291,8 +291,8 @@
     },
     {
       "name": "5gsheep",
-      "lastEditId": 92070972,
-      "lastEditTimestamp": "2022-10-22T07:33:14Z",
+      "lastEditId": 92089701,
+      "lastEditTimestamp": "2022-10-23T08:12:03Z",
       "lastEventId": 6185645,
       "lastEventTimestamp": "2022-10-22T07:33:19Z"
     },
@@ -354,8 +354,8 @@
     },
     {
       "name": "Kanashimi",
-      "lastEditId": 92051384,
-      "lastEditTimestamp": "2022-10-21T00:33:50Z",
+      "lastEditId": 92081267,
+      "lastEditTimestamp": "2022-10-22T21:49:22Z",
       "lastEventId": 5792328,
       "lastEventTimestamp": "2022-01-31T14:06:56Z"
     },
@@ -368,15 +368,15 @@
     },
     {
       "name": "Kocgs",
-      "lastEditId": 91857305,
-      "lastEditTimestamp": "2022-10-08T08:07:11Z",
-      "lastEventId": 6116086,
-      "lastEventTimestamp": "2022-09-04T07:58:22Z"
+      "lastEditId": 92086152,
+      "lastEditTimestamp": "2022-10-23T04:12:16Z",
+      "lastEventId": 6186962,
+      "lastEventTimestamp": "2022-10-23T04:09:12Z"
     },
     {
       "name": "Krorokeroro",
-      "lastEditId": 92079598,
-      "lastEditTimestamp": "2022-10-22T16:39:27Z",
+      "lastEditId": 92091718,
+      "lastEditTimestamp": "2022-10-23T10:36:45Z",
       "lastEventId": 6172723,
       "lastEventTimestamp": "2022-10-13T17:05:53Z"
     },
@@ -410,8 +410,8 @@
     },
     {
       "name": "Sakoppi",
-      "lastEditId": 92047969,
-      "lastEditTimestamp": "2022-10-20T15:13:21Z",
+      "lastEditId": 92096162,
+      "lastEditTimestamp": "2022-10-23T16:07:17Z",
       "lastEventId": 6183121,
       "lastEventTimestamp": "2022-10-20T14:51:43Z"
     },
@@ -424,8 +424,8 @@
     },
     {
       "name": "Syunsyunminmin",
-      "lastEditId": 92075758,
-      "lastEditTimestamp": "2022-10-22T12:52:45Z",
+      "lastEditId": 92094530,
+      "lastEditTimestamp": "2022-10-23T13:42:59Z",
       "lastEventId": 6185618,
       "lastEventTimestamp": "2022-10-22T07:23:03Z"
     },
@@ -473,22 +473,22 @@
     },
     {
       "name": "コヨミヤ",
-      "lastEditId": 92041327,
-      "lastEditTimestamp": "2022-10-20T07:00:23Z",
+      "lastEditId": 92095941,
+      "lastEditTimestamp": "2022-10-23T15:44:19Z",
       "lastEventId": 6182505,
       "lastEventTimestamp": "2022-10-20T07:02:09Z"
     },
     {
       "name": "バイロン",
-      "lastEditId": 92079025,
-      "lastEditTimestamp": "2022-10-22T15:52:05Z",
+      "lastEditId": 92091355,
+      "lastEditTimestamp": "2022-10-23T10:12:59Z",
       "lastEventId": 6160162,
       "lastEventTimestamp": "2022-10-05T10:50:15Z"
     },
     {
       "name": "三日月",
-      "lastEditId": 92077665,
-      "lastEditTimestamp": "2022-10-22T14:33:59Z",
+      "lastEditId": 92086528,
+      "lastEditTimestamp": "2022-10-23T04:45:00Z",
       "lastEventId": 6117171,
       "lastEventTimestamp": "2022-09-05T05:00:24Z"
     },
@@ -501,10 +501,10 @@
     },
     {
       "name": "松茸",
-      "lastEditId": 92076731,
-      "lastEditTimestamp": "2022-10-22T13:46:54Z",
-      "lastEventId": 6180248,
-      "lastEventTimestamp": "2022-10-18T13:47:39Z"
+      "lastEditId": 92093098,
+      "lastEditTimestamp": "2022-10-23T12:04:01Z",
+      "lastEventId": 6187051,
+      "lastEventTimestamp": "2022-10-23T06:00:59Z"
     },
     {
       "name": "舌先現象になります",
@@ -515,8 +515,8 @@
     },
     {
       "name": "要塞騎士",
-      "lastEditId": 92076989,
-      "lastEditTimestamp": "2022-10-22T13:57:54Z",
+      "lastEditId": 92096255,
+      "lastEditTimestamp": "2022-10-23T16:15:44Z",
       "lastEventId": 6160867,
       "lastEventTimestamp": "2022-10-06T02:27:36Z"
     }
@@ -545,19 +545,19 @@
     },
     {
       "name": "SeitenBot2",
-      "lastEditId": 92078181,
-      "lastEditTimestamp": "2022-10-22T15:01:29Z",
-      "lastEventId": 6186317,
-      "lastEventTimestamp": "2022-10-22T19:02:26Z"
+      "lastEditId": 92095314,
+      "lastEditTimestamp": "2022-10-23T14:45:45Z",
+      "lastEventId": 6188133,
+      "lastEventTimestamp": "2022-10-23T19:02:21Z"
     }
   ],
   "interfaceAdmins": [
     {
       "name": "Dragoniez",
-      "lastEditId": 92068944,
-      "lastEditTimestamp": "2022-10-22T04:52:45Z",
-      "lastEventId": 6186034,
-      "lastEventTimestamp": "2022-10-22T13:50:45Z"
+      "lastEditId": 92097136,
+      "lastEditTimestamp": "2022-10-23T18:39:22Z",
+      "lastEventId": 6188032,
+      "lastEventTimestamp": "2022-10-23T15:57:10Z"
     },
     {
       "name": "Infinite0694",
@@ -575,10 +575,10 @@
     },
     {
       "name": "Marine-Blue",
-      "lastEditId": 92031296,
-      "lastEditTimestamp": "2022-10-19T13:33:13Z",
-      "lastEventId": 6182267,
-      "lastEventTimestamp": "2022-10-20T02:46:20Z"
+      "lastEditId": 92096364,
+      "lastEditTimestamp": "2022-10-23T16:33:36Z",
+      "lastEventId": 6188065,
+      "lastEventTimestamp": "2022-10-23T16:33:59Z"
     },
     {
       "name": "Penn Station",
@@ -589,17 +589,17 @@
     },
     {
       "name": "Sakoppi",
-      "lastEditId": 92047969,
-      "lastEditTimestamp": "2022-10-20T15:13:21Z",
+      "lastEditId": 92096162,
+      "lastEditTimestamp": "2022-10-23T16:07:17Z",
       "lastEventId": 6183121,
       "lastEventTimestamp": "2022-10-20T14:51:43Z"
     },
     {
       "name": "W.CC",
-      "lastEditId": 92059442,
-      "lastEditTimestamp": "2022-10-21T12:19:59Z",
-      "lastEventId": 6184281,
-      "lastEventTimestamp": "2022-10-21T12:20:10Z"
+      "lastEditId": 92085698,
+      "lastEditTimestamp": "2022-10-23T03:42:48Z",
+      "lastEventId": 6186926,
+      "lastEventTimestamp": "2022-10-23T03:43:20Z"
     },
     {
       "name": "Whym",
@@ -630,5 +630,5 @@
       "lastEventTimestamp": "2022-09-21T22:52:16Z"
     }
   ],
-  "lastUpdate": "2022-10-22T19:02:50Z"
+  "lastUpdate": "2022-10-23T19:02:52Z"
 }
